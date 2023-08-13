@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 20px;
+    color: white;
+    background-color: rgb(31, 31, 31);
+}
+
+input[type="text" i],
+input[type="password" i] {
+    height: 30px;
+    outline: none;
+    padding: 5px;
+}
+
+input[type="submit" i] {
+    height: 30px;
+    color: white;
+    background-color: rgb(47, 133, 47);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+input[type="submit" i]:hover {
+    background-color: rgb(60, 168, 60);
+}
+
+.password-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#login-form,
+#create-form {
+    user-select: none;
+    cursor: pointer;
+}
+
+#create-user {
+    display: none;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#createPassword-eyeOff,
+#createConfirmPassword-eyeOff,
+#loginPassword-eyeOff,
+#editCurrentPassword-eyeOff,
+#editNewPassword-eyeOff {
+    display: none;
+    cursor: pointer;
+    user-select: none;
+    margin: 10px;
+}
+
+#createPassword-eye,
+#createConfirmPassword-eye,
+#loginPassword-eye,
+#editNewPassword-eye,
+#editCurrentPassword-eye {
+    cursor: pointer;
+    user-select: none;
+    margin: 10px;
+}
+
+#notification-container {
+    display: none;
+    width: 100%;
+    height: 40px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(97, 30, 30);
+}
+
+#userInfo-container,
+#message-container {
+    color: white;
+}
+
+#message-container {
+    font-size: 2em;
+}
+
+#userInfo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-info {
+    color: rgb(60, 168, 60);
+    word-break: break-all;
+}
+
+#logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(97, 30, 30);
+    color: white;
+    user-select: none;
+    align-self: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 720px) {
+    form {
+        background: none;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .password-container {
+        width: 250px;
+        border: 1px solid rgb(60, 168, 60);
+    }
+
+    input[type="text" i],
+    input[type="password" i] {
+        height: 50px;
+        width: 250px;
+        outline: none;
+        padding: 15px 0 0 5px;
+        font-size: 1.2em;
+        background-color: black;
+        color: white;
+        border: 1px solid rgb(47, 133, 47);
+    }
+
+    #loginUser-password,
+    #createUser-password,
+    #createUser-confirmPassword,
+    #editUser-newPassword,
+    #editUser-currentPassword {
+        border: none;
+        width: 204px;
+    }
+
+    input[type="submit" i] {
+        width: 250px;
+        height: 50px;
+    }
+}
