@@ -1,1 +1,1 @@
-# login-V1
+**Este projeto foi feito em um final de semana** com o meu conhecimento atual. Durante o processo de criação deste projeto, aprendi técnicas novas que não implementei. Essas técnicas teriam deixado o sistema de login com menos requisições ao banco de dados. No entanto, decidi não incluí-las neste projeto, pois queria demonstrar o que sabia até aquele momento. Isso me permitirá comparar com o que vou aprender no futuro.
